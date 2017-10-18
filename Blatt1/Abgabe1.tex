@@ -1,0 +1,51 @@
+\documentclass[a4paper,10pt]{article}
+% UTF8 Charset für Umlaute/Sonderzeichen
+\usepackage[utf8]{inputenc}
+% Deutsche Namen und Datumsformat
+\usepackage[ngerman]{babel}
+%Quellenangaben
+\usepackage{hyperref}
+%Fancy Mathesymbole
+\usepackage{amssymb}
+\usepackage{dsfont}
+%Aufzählung
+\usepackage{paralist}
+%Pfeile
+\usepackage{amsmath}
+\makeatletter
+\newcommand{\xRightarrow}[2][]{\ext@arrow 0359\Rightarrowfill@{#1}{#2}}
+\makeatother
+%Krams
+\usepackage{amsmath}
+\usepackage{amsthm}
+%Gewitter
+\usepackage{ stmaryrd }
+% Algorithmen Pseudocode
+\usepackage[]{algorithm2e}
+% Bilder
+\usepackage{graphics}
+\usepackage{wrapfig}
+%GeoGebra
+
+
+\newcommand{\bigo}{\ensuremath{\mathcal{O}}}
+\newcommand{\BT}{\ensuremath{\Theta}}
+\newcommand{\N}{\ensuremath{\mathbb{N}}}
+\newcommand{\Set}{\ensuremath{\mathcal{S}}}
+\newcommand{\PMenge}{\ensuremath{\mathcal{P}}}
+
+
+% Hier die Nummer des Blatts, Autoren und Name des Betreuers angeben.
+\newcommand{\blatt}{1}
+\newcommand{\autor}{Edenfeld, Lemke, Moser, Schinke}
+\newcommand{\betreuer}{Carina Pilch}
+\usepackage{../abgabe}
+
+\begin{document}
+	% Seitenkopf mit Informationen
+	\kopf
+	
+	\input{Aufgabe1.tex}
+		 
+\end{document}
+
