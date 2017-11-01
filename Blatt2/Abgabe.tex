@@ -28,7 +28,19 @@
 %GeoGebra
 \usepackage{tikz}
 \usetikzlibrary{arrows,automata,positioning}
+%for timed automata in addition to tikz
+\usepackage{pgf}
 
+\tikzset{
+	state/.style={
+		circle,
+		rounded corners,
+		draw=black, very thick,
+		minimum height=2em,
+		inner sep=2pt,
+		text centered,
+	},
+}
 
 \newcommand{\bigo}{\ensuremath{\mathcal{O}}}
 \newcommand{\BT}{\ensuremath{\Theta}}
