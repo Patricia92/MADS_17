@@ -1,2 +1,71 @@
 \aufgabe 3
 
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+semithick]
+\node[state,minimum size=2.5cm] (l01) 
+{\begin{tabular}{c}
+	$l_0$\\
+    $x=0$				
+	\end{tabular}};
+
+\node[state,minimum size=2.5cm] (l02) [right of=l01]
+{\begin{tabular}{c}
+	$l_0$\\
+	$0<x<1$				
+	\end{tabular}};
+
+\node[state,minimum size=2.5cm] (l03) [right of=l02]
+{\begin{tabular}{c}
+	$l_0$\\
+	$x=1$				
+	\end{tabular}};
+
+\node[state,minimum size=2.5cm] (l04) [right of=l03]
+{\begin{tabular}{c}
+	$l_0$\\
+	$1<x<2$				
+	\end{tabular}};
+
+\node[state,minimum size=2.5cm] (l05) [right of=l04]
+{\begin{tabular}{c}
+	$l_0$\\
+	$x=2$				
+	\end{tabular}};
+
+\node[state,minimum size=2.5cm] (l11) [below of = l01]
+{\begin{tabular}{c}
+	$l_1$\\
+	$x=0$				
+	\end{tabular}};
+
+\node[state,minimum size=2.5cm] (l12) [right of=l11]
+{\begin{tabular}{c}
+	$l_1$\\
+	$0<x<1$				
+	\end{tabular}};
+
+\node[state,minimum size=2.5cm] (l13) [right of=l12]
+{\begin{tabular}{c}
+	$l_1$\\
+	$x=1$				
+	\end{tabular}};
+
+\node[state,minimum size=2.5cm] (l14) [right of=l13]
+{\begin{tabular}{c}
+	$l_1$\\
+	$1<x<2$				
+	\end{tabular}};
+
+\node[state,minimum size=2.5cm] (l15) [right of=l14]
+{\begin{tabular}{c}
+	$l_1$\\
+	$x=2$				
+	\end{tabular}};
+
+\node[state,minimum size=2.5cm] (l16) [below of=l15]
+{\begin{tabular}{c}
+	$l_1$\\
+	$x>2$				
+	\end{tabular}};
+
+\end{tikzpicture}
