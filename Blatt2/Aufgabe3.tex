@@ -2,70 +2,87 @@
 
 \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
 semithick]
-\node[state,minimum size=2.5cm] (l01) 
+\node[state,minimum size=2.05cm] (l01) 
 {\begin{tabular}{c}
 	$l_0$\\
     $x=0$				
 	\end{tabular}};
 
-\node[state,minimum size=2.5cm] (l02) [right of=l01]
+\node[state,minimum size=2.05cm] (l02) [right of=l01]
 {\begin{tabular}{c}
 	$l_0$\\
 	$0<x<1$				
 	\end{tabular}};
 
-\node[state,minimum size=2.5cm] (l03) [right of=l02]
+\node[state,minimum size=2.05cm] (l03) [right of=l02]
 {\begin{tabular}{c}
 	$l_0$\\
 	$x=1$				
 	\end{tabular}};
 
-\node[state,minimum size=2.5cm] (l04) [right of=l03]
+\node[state,minimum size=2.05cm] (l04) [right of=l03]
 {\begin{tabular}{c}
 	$l_0$\\
 	$1<x<2$				
 	\end{tabular}};
 
-\node[state,minimum size=2.5cm] (l05) [right of=l04]
+\node[state,minimum size=2.05cm] (l05) [right of=l04]
 {\begin{tabular}{c}
 	$l_0$\\
 	$x=2$				
 	\end{tabular}};
 
-\node[state,minimum size=2.5cm] (l11) [below of = l01]
+\node[state,minimum size=2.05cm] (l11) [below of = l01]
 {\begin{tabular}{c}
 	$l_1$\\
 	$x=0$				
 	\end{tabular}};
 
-\node[state,minimum size=2.5cm] (l12) [right of=l11]
+\node[state,minimum size=2.05cm] (l12) [right of=l11]
 {\begin{tabular}{c}
 	$l_1$\\
 	$0<x<1$				
 	\end{tabular}};
 
-\node[state,minimum size=2.5cm] (l13) [right of=l12]
+\node[state,minimum size=2.05cm] (l13) [right of=l12]
 {\begin{tabular}{c}
 	$l_1$\\
 	$x=1$				
 	\end{tabular}};
 
-\node[state,minimum size=2.5cm] (l14) [right of=l13]
+\node[state,minimum size=2.05cm] (l14) [right of=l13]
 {\begin{tabular}{c}
 	$l_1$\\
 	$1<x<2$				
 	\end{tabular}};
 
-\node[state,minimum size=2.5cm] (l15) [right of=l14]
+\node[state,minimum size=2.05cm] (l15) [right of=l14]
 {\begin{tabular}{c}
 	$l_1$\\
 	$x=2$				
 	\end{tabular}};
 
-\node[state,minimum size=2.5cm] (l16) [below of=l15]
+\node[state,minimum size=2.05cm] (l16) [below of=l15]
 {\begin{tabular}{c}
 	$l_1$\\
 	$x>2$				
 	\end{tabular}};
+
+\path (l01) edge            node {$\tau$} (l02)
+	(l02) edge              node {$\tau$} (l03)
+	(l03) edge              node {$\tau$} (l04)
+	(l04) edge              node {$\tau$} (l05)
+	
+	(l01) edge            node {$\alpha$} (l11)
+	(l02) edge            node {$\alpha$} (l12)
+	(l03) edge            node {$\alpha$} (l13)
+	
+	(l11) edge              node {$\tau$} (l12)
+	(l12) edge              node {$\tau$} (l13)
+	(l13) edge              node {$\tau$} (l14)
+	(l14) edge              node {$\tau$} (l15)
+	(l15) edge              node {$\tau$} (l16)
+	(l16) edge [loop below] node {$\tau$} (l16);
+
 
 \end{tikzpicture}
