@@ -1,3 +1,46 @@
 \aufgabe 2
 
+\paragraph{a)}\mbox{} \\
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=2.8cm,
+semithick]
+\node[state,minimum size=2.2cm] (l01) 
+{\begin{tabular}{c}
+	$l_0$\\
+	$x=0$				
+	\end{tabular}};
 
+\node[state,minimum size=2.2cm] (l02) [right of=l01]
+{\begin{tabular}{c}
+	$l_0$\\
+	$0<x<1$				
+	\end{tabular}};
+
+\node[state,minimum size=2.2cm] (l03) [right of=l02]
+{\begin{tabular}{c}
+	$l_0$\\
+	$x=1$				
+	\end{tabular}};
+
+\node[state,minimum size=2.2cm] (l04) [right of=l03]
+{\begin{tabular}{c}
+	$l_0$\\
+	$x>1$				
+	\end{tabular}};
+
+
+
+\path (l01) edge        node {$\tau$} (l02)
+(l02) edge              node {$\tau$} (l03)
+(l03) edge              node {$\tau$} (l04)
+(l01) edge [loop above] node {$\alpha$} (l01)
+(l02) edge [loop above] node {$\alpha$} (l02)
+(l03) edge [loop above] node {$\alpha$} (l03);
+
+
+\end{tikzpicture}
+
+\paragraph{b)}\mbox{} \\
+
+Es existiert ein Zenopfad in $\tau_1$, da der $\alpha$-Übergang unendlich mal durchgeführt werden kann ohne Zeit verstreichen zu lassen. Somit könnten die Zustände $(l_0, x=0), (l_0, 0<x<1), (l_0, x=1)$ jeweils unendlich viele $\alpha$-Übergänge durchführen. \\
+
+Um dieses Zenoverhalten nicht zu ermöglichen, wird folgende $TCTL$-Formel benötigt: 

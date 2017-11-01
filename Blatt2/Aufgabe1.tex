@@ -4,6 +4,11 @@
 \begin{itemize}
 	\item[a)] $AG(rec \rightarrow (A(\neg wait)U^{\leq2} ack))$ 
 	\item[b)] $EF rec$
-	\item[c)] $E(wait \rightarrow EF^{\leq 10}(dist \wedge x=0))$
-	
+	\item[c)] $E(wait \rightarrow EF^{\leq 10}(dist \wedge x=0))$	
 \end{itemize}
+
+Die TCTL Formel a) wird nicht vom Automaten erfüllt, da es einen Pfad gibt, in dem 2 Minuten im Zustand $rec$ und zusätzlich eine weitere Minute in $fwd$ gewartet wird, wodruch $ack$ erst nach insgesamt 3 Minuten erriecht werden würde. \\
+
+Die TCTL- Formel b) wird nicht vom Automaten erfüllt, da es möglich ist immer nach 10 Minuten in den Zustand $dist$ zu wechseln, die bei Minute 11 einkommende Nachricht zu verpassen und wieder zurück nach $wait$ zu springen, wodurch effektiv keine Nachricht durchkommt. \\
+
+Die TCTL- Formel c) wird vom Automaten erfüllt, da es möglich ist bei Minute 10 in den Zustand $dist$ zu wechseln und dadurch zeitgleich eine eingehende Nachricht zu verpassen.
