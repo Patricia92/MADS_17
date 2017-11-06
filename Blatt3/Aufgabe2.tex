@@ -35,7 +35,7 @@ Erklärung der Formeln für das Modell $Contr$:
 	Es existiert ein Pfad auf dem der Zustand $Contr.CRed\_PRed$ erreicht wird.
 	
 	\item $A[] \text{not deadlock}$ \\
-	Es gibt kein Deadlock innerhalb des Modells
+	Es gibt keinen Deadlock innerhalb des Modells.
 	
 	\item $\text{Contr.CRed\_PGreen} \rightarrow  \text{Contr.CGreen\_PRed}$ \\
 	Ausgehend vom Zustand $Contr.CRed\_PGreen$ wird irgendwann der Zustand $Contr.CGreen\_PRed$ erreicht.
@@ -75,7 +75,7 @@ Erklärung der Formeln für das Modell $Contr||Ped$
 	Auf sämtlichen Pfaden gelten nicht gleichzeitig $Contr.CRed\_PGreen$ und $Ped.Ped\_Walking$ zu einem Zeitpunkt, an dem $y>2$ gilt.
 	
 	\item $A \left[\right] \text{not} (\text{Contr.CGreen\_PRed} \&\& \text{Ped.Ped\_Walking}) $\\
-	Aus sämtlichen Pfaden gilt nicht gleichzeitig $Contr.CGreen\_PRed$ und $Ped.Ped\_Walking$.
+	Auf sämtlichen Pfaden gilt nicht gleichzeitig $Contr.CGreen\_PRed$ und $Ped.Ped\_Walking$.
 \end{enumerate}
 
 
@@ -178,4 +178,4 @@ Indem die Dauer der Rot/Grün, Rot/Rot und der Gelb/Rot Phasen auf insgesamt ein
 
 \paragraph{j)}\mbox{} \\
 
-\todo{Wir alle müssen das noch kurz ausformulieren :D } 
+Zwischen zwei grünen Amplephasen für Fußgäger liegen zwei mal die "'Dead Phase"', zwei mal die "'Yellow Phase"' und mindestens acht Sekunden grüne Ampelphase für die Autos, was insgesamt $2*2+2*3+8=18$ Sekunden ergibt, in dieser Zeit können nicht mehr als vier Fußgänger auftauchen, wenn sie alle fünf Sekunden auftauchen.
