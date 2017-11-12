@@ -1,0 +1,31 @@
+\aufgabe 1
+
+\subsection*{Aufgabenteil a:}
+
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=10cm,
+semithick]
+\node[initial left, state,minimum size=2.2cm, initial text = {$x_l=0\wedge x_u=0\wedge y_l=0\wedge y_u=0$}] (s1) 
+{\begin{tabular}{c}
+	$s1$\\
+	$\dot{x_l}=1$\\
+	$\dot{x_u}=2$\\
+	$\dot{y_l}=3$\\
+	$\dot{y_u}=4$
+	\end{tabular}};
+
+\node[state,minimum size=2.2cm] (s2) [right of=s1]
+{\begin{tabular}{c}
+	$s2$\\
+	$\dot{x_l}=1$\\
+	$\dot{x_u}=2$\\
+	$\dot{y_l}=1$\\
+	$\dot{y_u}=2$			
+	\end{tabular}};
+
+
+
+\path (s1) edge        node {$x_l \le 3 \wedge x_u \le 3 y_l:=1;y_u:=2$} (s2)
+(s1) edge              node {$x_l \le 3 \wedge x_u > 3 y_l:=1;y_u:=2;x_u:=3$} (s2);
+
+
+\end{tikzpicture}
