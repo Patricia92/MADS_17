@@ -4,7 +4,8 @@
 
 \begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=10cm,
 semithick]
-\node[initial left, state,minimum size=2.2cm, initial text = {$x_l=0\wedge x_u=0\wedge y_l=0\wedge y_u=0$}] (s1) 
+
+\node[initial above, state,minimum size=2.2cm, initial text = {$x_l=0\wedge x_u=0\wedge y_l=0\wedge y_u=0$}] (s1) 
 {\begin{tabular}{c}
 	$s1$\\
 	$\dot{x_l}=1$\\
@@ -24,8 +25,8 @@ semithick]
 
 
 
-\path (s1) edge        node {$x_l \le 3 \wedge x_u \le 3 y_l:=1;y_u:=2$} (s2)
-(s1) edge              node {$x_l \le 3 \wedge x_u > 3 y_l:=1;y_u:=2;x_u:=3$} (s2);
+\path (s1) edge       [bend left] node {$x_l \le 3 \wedge x_u \le 3 \text{ }y_l:=1;\text{ }y_u:=2$} (s2)
+	  (s1)edge        node {$x_l \le 3 \wedge x_u > 3\text{ } y_l:=1;\text{ }y_u:=2;\text{ }x_u:=3$} (s2);
 
 
 \end{tikzpicture}
