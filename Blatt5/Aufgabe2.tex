@@ -4,16 +4,16 @@
 R_1 = & T_L^+(R_0) = (l_0, \exists t. \exists x_{pre}. \exists y_{pre}. t\ge 0 \wedge x = x_{pre} \wedge x_{pre}\in R_0 \wedge y = y_{pre} + t \wedge y_{pre}\in R_0 \wedge x+y\le 4) \\
 = & (l_0, \exists t. \exists x_{pre}. \exists y_{pre}. t\ge 0 \wedge x = x_{pre} \wedge y = y_{pre} + t \wedge x+y\le 4 \wedge x_{pre} = y_{pre} = 0)\\
 = & (l_0, \exists t. t\ge 0 \wedge x = 0 \wedge y = t \wedge x+y\le 4)\\
-= & (l_0, \exists t. t\ge 0 \wedge x = 0 \wedge y = t \wedge y\le 4)\\\\
+= & (l_0, \exists t. t\ge 0 \wedge x = 0 \wedge y = t \wedge y\le 4)\\
+= & (l_0, x = 0 \wedge y \ge 0 \wedge y\le 4)\\\\
 R_2 = & D_L^+(R_1) = (l_1, \exists x_{pre}. \exists y_{pre}. x_{pre}\in R_1 \wedge y_{pre}\in R_1 \wedge x\le 3 \wedge x=x_{pre}\wedge y=y_{pre})\\
-= & (l_1, \exists t. \exists x_{pre}. \exists y_{pre}. t\ge 0 \wedge x=x_{pre} \wedge y = y_{pre} \wedge x \le 3 \wedge y_{pre} \le 4 \wedge x_{pre} = 0 \wedge y = t)\\
-= & (l_1, \exists t. t\ge 0 \wedge x=0 \wedge y \le 4 \wedge y = t)\\
-= & (l_1, x=0 \wedge y \le 4)\\\\
+= & (l_1, \exists x_{pre}. \exists y_{pre}. \wedge x=x_{pre} \wedge y = y_{pre} \wedge x \le 3 \wedge y_{pre} \ge 0 \wedge y_{pre} \le 4 \wedge x_{pre} = 0)\\
+= & (l_1, x=0 \wedge y \le 4 \wedge y \ge 0)\\\\
 R_3 = & T_L^+(R_2) = (l_1, \exists t. \exists x_{pre}. \exists y_{pre}. t\ge 0 \wedge x_{pre} \in R_2 \wedge y_{pre} \in R_2 \wedge x = x_{pre} + t \wedge y = y_{pre} + t \wedge x\le 3)\\
-= & (l_1, \exists t. \exists x_{pre}. \exists y_{pre}. t\ge 0 \wedge x_{pre} = 0 \wedge y_{pre} \le 4 \wedge x = x_{pre} + t \wedge y = y_{pre} + t \wedge x\le 3)\\
+= & (l_1, \exists t. \exists x_{pre}. \exists y_{pre}. t\ge 0 \wedge x_{pre} = 0 \wedge y_{pre} \le 4  \wedge y_{pre} \ge 0\wedge x = x_{pre} + t \wedge y = y_{pre} + t \wedge x\le 3)\\
 = & (l_1, \exists t. t\ge 0 \wedge x = t \wedge y \le 4 + t \wedge x\le 3)\\\\
 R_4 = & D_L^+(R_3) = (l_0, \exists x_{pre}. \exists y_{pre}. x_{pre} \in R_3 \wedge y_{pre} \in R_3 \wedge x=0 \wedge y=0 \wedge x+y\le 4)\\
-= & (l_0, \exists t. \exists x_{pre}. \exists y_{pre}. t \ge 0 \wedge x_{pre} = t \wedge y_{pre} \le 4 +t \wedge x=0 \wedge y=0 \wedge x+y\le 4)\\
+= & (l_0, \exists t. \exists x_{pre}. \exists y_{pre}. t \ge 0 \wedge x_{pre} = t \wedge y_{pre} \le 4 +t\wedge x_{pre}\le 3  \wedge x=0 \wedge y=0 \wedge x+y\le 4)\\
 = & (l_0, \exists t. t \ge 0 \wedge x=0 \wedge y=0)\\
 = & (l_0, x=0 \wedge y=0)\\\\
 P_2 = & \{R_4\}= \{(l_0, x=0 \wedge y=0)\}
