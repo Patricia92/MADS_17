@@ -1,0 +1,48 @@
+\aufgabe 1
+
+
+\begin{tikzpicture}[->,>=stealth',shorten >=1pt,auto,node distance=10cm,
+semithick]
+
+\node[initial above, state,minimum size=2.2cm, initial text = {$p_O:=0\wedge p_D:=0$}] (l0) 
+{\begin{tabular}{c}
+	$l_0$\\
+	$\dot{p_o}=v_0$\\
+	$\dot{p_D} \in \left[-v_D, v_D\right]$\\
+	$p_O - p_D < 3$\\
+	$p_D - p_O < 3$
+	\end{tabular}};
+
+\node[state,minimum size=2.2cm] (l1) [right of=l0]
+{\begin{tabular}{c}
+	$l_1$\\
+	$\dot{p_O}=0$\\
+	$\dot{p_D} \in \left[0, v_D\right] $\\
+	$p_O - p_D = 3$		
+	\end{tabular}};
+
+\node[state,minimum size=2.2cm] (l3) [below of=l1]
+{\begin{tabular}{c}
+	$l_3$\\
+	$\dot{p_O}=0$\\
+	$\dot{p_D} \in \left[-v_D, v_D\right] $\\
+	$p_O - p_D < 3$	\\
+	$p_O - p_D > 0$		
+	\end{tabular}};
+
+\node[state,minimum size=2.2cm] (l2) [below of=l0]
+{\begin{tabular}{c}
+	$l_2$\\
+	$\dot{p_O}=v_0$\\
+	$\dot{p_D} \in \left[-v_D, 0\right] $\\
+	$p_D - p_0 = 3$		
+	\end{tabular}};
+
+\path (l0) edge      node {$p_O-p_D = 3$} (l1)
+	  (l1) edge       [bend right,  pos=0.4]node {$p_O-p_D <3$} (l3)
+	  (l3) edge         [bend right, pos =0.4]node {$p_O-p_D =3$} (l1)
+	  (l3) edge        node {$p_O-p_D =0$} (l0)
+	  (l0) edge        [bend right, pos =0.4]node {$p_D-p_O =3$} (l2)
+	  (l2) edge        [bend right,  pos=0.4]node {$p_O-p_D <3$} (l0);
+
+\end{tikzpicture}
