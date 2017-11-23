@@ -1,0 +1,38 @@
+\aufgabe 2
+
+\subsection*{Aufgabenteil a:}
+\begin{figure}[h]
+	\begin{tikzpicture}
+	\tkzInit[xmax=11,ymax=6,xmin=0,ymin=0]
+	\tkzGrid
+	\tkzAxeXY
+	\draw[thick] (1.5,2.25) -- (2.5,4.25) node[] {};
+	\draw[thick] (5,5.5) -- (2.5,4.25) node[] {};
+	\draw[thick] (5,5.5) -- (8.5,5) node[] {};
+	\draw[thick] (3.5,2.5) -- (8.5,5) node[] {};
+	\draw[thick] (3.5,2.5) -- (1.5,2.25) node[] {};
+	\tkzText[below](5.5,-1){$P'=\text{cHull}(\{\Point{1.5}{2.25},\Point{2.5}{4.25},\Point{5}{5.5},\Point{8.5}{5},\Point{3.5}{2.5}\})$}
+	\end{tikzpicture}
+\end{figure}
+
+\subsection*{Aufgabenteil b:}
+\begin{figure}[h]
+	\begin{tikzpicture}
+	\tkzInit[xmax=11,ymax=6,xmin=0,ymin=0]
+	\tkzGrid
+	\tkzAxeXY
+	\draw[thick] (6,1.5) -- (8,1.5) node[] {};
+	\draw[thick] (9,2.5) -- (8,1.5) node[] {};
+	\draw[thick] (9,2.5) -- (9,3.5) node[] {};
+	\draw[thick] (8.5,4.5) -- (9,3.5) node[] {};
+	\draw[thick] (8.5,4.5) -- (8.5,4.5) node[] {};
+	\draw[thick] (7.5,5.5) -- (8.5,4.5) node[] {};
+	\draw[thick] (7.5,5.5) -- (6.5,5.5) node[] {};
+	\draw[thick] (5.5,4.5) -- (6.5,5.5) node[] {};
+	\draw[thick] (5.5,4.5) -- (5,3.5) node[] {};
+	\draw[thick] (5,2.5) -- (5,3.5) node[] {};
+	\draw[thick] (5,2.5) -- (6,1.5) node[] {};
+	\tkzText[below](5.5,-1){$P'=\text{cHull}(\{\Point{6}{1.5},\Point{8}{1.5},\Point{9}{2.5},\Point{9}{3.5},\Point{8.5}{4.5},\Point{7.5}{5.5}\Point{6.5}{5.5},\Point{5.5}{4.5},\Point{5}{3.5},\Point{5}{2.5}\})$}
+	\end{tikzpicture}
+\end{figure}
+\newpage
