@@ -1,4 +1,46 @@
 \aufgabe 1
 
-...
+\begin{align*}
+T_l^-(P_0)=&(l_2,\underline{\exists\xp}.\exists\yp.\exists\zp.\exists t.t\ge 0\wedge\yp\ge 60\wedge 20\zp>\yp\wedge\underline{\xp=x+t}\wedge\yp=y+t\\&\wedge\zp=z) \\
+=&(l_2,\underline{\exists\yp}.\exists\zp.\exists t.t\ge 0\wedge\underline{\yp\ge 60}\wedge \underline{20\zp>\yp}\wedge\underline{\yp=y+t}\wedge\zp=z) \\
+=&(l_2,\underline{\exists\zp}.\exists t.t\ge 0\wedge \underline{20\zp>60}\wedge\underline{20\zp>y+t}\wedge y+t\ge 60\wedge\underline{\zp=z}) \\
+=&(l_2,\underline{\exists t}.\underline{t\ge 0}\wedge 20z>60\wedge\underline{20z>y+t}\wedge \underline{y+t\ge 60}) \\
+=&(l_2,20z>60\wedge 20z>y\wedge 20z -y\ge 60 -y) \\
+=&(l_2,20z>60\wedge 20z>y) \\
+\\
+P_1=&D_e^-(T_l^-(P_0))\\
+=&(l_1,\underline{\exists\xp}.\exists\yp.\exists\zp.20\zp >\yp\wedge 20\zp>60\wedge\underline{\xp=0}\wedge y=\yp\wedge z=\zp\\&\wedge x\le 1) \\
+=&(l_1,\underline{\exists\yp}.\exists\zp.\underline{20\zp >\yp}\wedge 20\zp>60\wedge\underline{y=\yp}\wedge z=\zp \wedge x\le 1) \\
+=&(l_1,\underline{\exists\zp}.\underline{20\zp >y}\wedge \underline{20\zp>60}\wedge \underline{z=\zp} \wedge x\le 1) \\
+=&(l_1,20z >y\wedge 20z>60\wedge x\le 0) \\
+\\
+T_l^-(P_1)=&(l_1,\underline{\exists\xp}.\exists\yp.\exists\zp.\exists t.t\ge 0\wedge 20\zp >\yp\wedge 20\zp>60\wedge\underline{\xp\le 1}\wedge\underline{\xp=x+t}\\&\wedge\yp=y+t\wedge\zp=z+t\wedge x\le 1)\\
+=&(l_1,\underline{\exists\yp}.\exists\zp.\exists t.t\ge 0\wedge\underline{20\zp >\yp}\wedge 20\zp>60\wedge x+t\le 1\wedge\underline{\yp=y+t}\\&\wedge\zp=z+t\wedge x\le 1)\\
+=&(l_1,\underline{\exists\zp}.\exists t.t\ge 0\wedge\underline{20\zp >y+t}\wedge \underline{20\zp>60}\wedge x+t\le 1\wedge\underline{\zp=z+t}\wedge x\le 1)\\
+=&(l_1,\underline{\exists t}.\underline{t\ge 0}\wedge\underline{20z+20t >y+t}\wedge \underline{20z+20t>60}\wedge \underline{t\le 1-x}\wedge x\le 1)\\
+=&(l_1,1-x\ge 0\wedge 20z+19-19x>y\wedge 20z+20-20x>60\wedge x\le 1)\\
+=&(l_1,1\ge x\wedge 20z+19>y+19x\wedge z>2+x)\\
+\\
+P_2=&D_e^-(T_l^-(P_1))\\
+=&(l_2,\exists\xp.\underline{\exists\yp}.\exists\zp.1\ge \xp\wedge\underline{20\zp+19>\yp+19\xp}\wedge \zp>2+\xp\wedge x\ge 30\\&\wedge\xp=0\wedge\underline{\yp=y}\wedge\zp=z)\\
+=&(l_2,\exists\xp.\underline{\exists\zp}.1\ge \xp\wedge\underline{20\zp+19>y+19\xp}\wedge\underline{\zp>2+\xp}\wedge x\ge 30\wedge\xp=0\\&\wedge\underline{\zp=z})\\
+=&(l_2,\underline{\exists\xp}.\underline{1\ge \xp}\wedge\underline{20z+19>y+19\xp}\wedge\underline{z>2+\xp}\wedge x\ge 30\wedge\underline{\xp=0})\\
+=&(l_2,1\ge 0\wedge 20z+19>y\wedge z>2\wedge x\ge 30)\\
+=&(l_2,20z+19>y\wedge z>2\wedge x\ge 30)\\
+\end{align*}
+\begin{align*}
+T_l^-(P_2)=&(l_2,\underline{\exists\xp}.\exists\yp.\exists\zp.\exists t.t\ge 0\wedge 20\zp+19>\yp\wedge\zp>2\wedge\underline{\xp\ge 30}\wedge\underline{\xp=x+t}\\&\wedge\yp=y+t\wedge\zp=z)\\
+=&(l_2,\underline{\exists\yp}.\exists\zp.\exists t.t\ge 0\wedge\underline{20\zp+19>\yp}\wedge\zp>2\wedge x+t\ge 30\wedge\underline{\yp=y+t}\\&\wedge\zp=z)\\
+=&(l_2,\underline{\exists\zp}.\exists t.t\ge 0\wedge\underline{20\zp+19>y+t}\wedge\underline{\zp>2}\wedge x+t\ge 30\wedge\underline{\zp=z})\\
+=&(l_2,\underline{\exists t}.\underline{t\ge 0}\wedge\underline{20z+19>y+t}\wedge z>2\wedge\underline{x+t\ge 30})\\
+=&(l_2,20z+19>y\wedge z>2\wedge 19+20z+x\ge y+30)\\
+=&(l_2,20z+19>y\wedge z>2\wedge 20z+x\ge y+11)\\
+\\
+P_3=&D_e^-(T_l^-(P_2))\\
+=&(l_1,\underline{\exists\xp}.\exists\yp.\exists\zp.20\zp+19>\yp\wedge \zp>2\wedge\underline{20\zp+\xp\ge\yp+11}\\&\wedge\underline{\xp=0}\wedge y=\yp\wedge z=\zp\wedge x\le 1)\\
+=&(l_1,\underline{\exists\yp}.\exists\zp.\underline{20\zp+19>\yp}\wedge \zp>2\wedge\underline{20\zp\ge\yp+11}\wedge\underline{y=\yp}\\&\wedge z=\zp\wedge x\le 1)\\
+=&(l_1,\underline{\exists\zp}.\underline{20\zp+19>y}\wedge\underline{\zp>2}\wedge\underline{20\zp\ge y+11}\wedge\underline{z=\zp}\wedge x\le 1)\\
+=&(l_1,20z+19>y\wedge z>2\wedge 20z\ge y+11\wedge x\le 1)\\
+=&(l_1,z>2\wedge 20z\ge y+11\wedge x\le 1)\\
+\end{align*}
 \newpage
