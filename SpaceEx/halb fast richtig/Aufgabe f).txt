@@ -1,0 +1,4 @@
+Es ist wie zu erwarten eine Kombination aus d) und e) zu erkennen.
+A und b Steigen zunächst. Sobald 10 Sekunden vergangen sind, fällt a ab, aber b steigt weiter.
+Wenn der Punkt a = b erreicht ist, beginnt auch b wieder zu fallen.
+Insgesamt nimmt die Ladung ab, da die Rate mit der Entladen wird größer ist, als die mit der geladen wird.

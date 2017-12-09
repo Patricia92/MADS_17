@@ -1,0 +1,5 @@
+Es ist zu erkennen, dass der Recovery Effect wie schon in d) beschrieben greift.
+Je größer der Abstand zu a wird desto stärker wird dieser Effekt. An dem Punkt wo a bereits entladen wird, 
+erhält b immernoch Ladung von a, da a > b. Ein Scheitelpunkt des Graphen ist der Zeitpunkt an dem a = b und im 
+Anschluss wird a < b und b gibt Ladung an a ab.
+Dieser Vorgang wiederholt sich wie in d).

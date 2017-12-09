@@ -1,0 +1,4 @@
+Die Ausgabe zeigt, dass zunächst 10 Sekunden lang geladen wird und dabei durch den Recovery Effekt
+Ladung an b abgegeben wird, sobald a > b. Aus diesem Grund läd a nicht vollständig auf bis auf 6000.
+Im Anschluss wird a entladen und sobald a < b gilt, dreht der Recovery Effekt sich um.
+Dieser Vorgang wiederholt sich.

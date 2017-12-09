@@ -1,0 +1,4 @@
+Bei knapp über 42 Sekunden bei Bounds g[0,48],a[0,6000].
+Bei knapp über 42 Sekunden bei Bounds g[0,48],b[0,6000].
+
+Weil...?
