@@ -1,0 +1,3 @@
+Der Unterschied bei beiden Graphen ist, dass der Raum an erreichbaren Zuständen deutlich größer ausfällt
+in den neueren Graphen.
+Das Verhalten beider Graphen ist anstansten ähnlich(gleich?).

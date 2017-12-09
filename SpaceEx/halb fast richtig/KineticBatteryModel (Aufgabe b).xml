@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<sspaceex xmlns="http://www-verimag.imag.fr/xml-namespaces/sspaceex" version="0.2" math="SpaceEx">
+  <component id="KineticBatteryModel">
+    <param name="a" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="b" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="adapt_charging" type="label" local="false" />
+    <param name="adapt_discharging" type="label" local="false" />
+    <param name="switch_discharging" type="label" local="false" />
+    <param name="switch_charging" type="label" local="false" />
+    <param name="discharging_rate" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="charging_rate" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <location id="1" name="normal_charging" x="430.0" y="186.0" width="390.0" height="156.0">
+      <invariant>a &lt;= 9000 - (-1) * charging_rate
+&amp;  charging_rate &lt;= 0</invariant>
+      <flow>a' == 0.01 * ( (b / (1-0.5) ) - a/0.5 ) - charging_rate &amp;
+b' == 0.01 * ( (a/0.5) - (b / (1-0.5) )) &amp;charging_rate' == 0
+&amp; discharging_rate' == 0</flow>
+    </location>
+    <location id="2" name="normal_discharging" x="943.0" y="186.0" width="350.0" height="176.0">
+      <invariant>a &gt;= discharging_rate
+&amp; discharging_rate &gt;= 0</invariant>
+      <flow>a' == 0.01 *( (b/ (1 - 0.5)) - a/0.5) - discharging_rate&amp;
+b' == 0.01 * ( (a/0.5) - (b / (1-0.5) )) &amp;
+charging_rate' == 0
+&amp; discharging_rate' == 0</flow>
+    </location>
+    <location id="3" name="adapted_charging" x="427.0" y="540.0" width="358.0" height="114.0">
+      <flow>a' == 0.01 *( (b/ (1 - 0.5)) - a/0.5) - (-1) * 9000 - a &amp;
+charging_rate' == 0 &amp;
+discharging_rate' == 0 &amp;
+b' == 0.01 * ( (a/0.5) - (b / (1-0.5) ))</flow>
+    </location>
+    <location id="4" name="adapted_discharging" x="940.0" y="538.0" width="290.0" height="120.0">
+      <flow>a' == discharging_rate 
+&amp;charging_rate' == 0
+&amp; discharging_rate' == 0 &amp;
+b' == 0.01 * ( (a/0.5) - (b / (1-0.5) ))</flow>
+    </location>
+    <transition source="1" target="3">
+      <label>adapt_charging</label>
+      <guard>a &gt; 9000 - (-1) * charging_rate</guard>
+      <labelposition x="20.0" y="-38.0" width="158.0" height="94.0" />
+    </transition>
+    <transition source="2" target="4">
+      <label>adapt_discharging</label>
+      <guard>discharging_rate &gt; a</guard>
+      <labelposition x="21.0" y="-21.0" width="128.0" height="52.0" />
+    </transition>
+    <transition source="1" target="2">
+      <label>switch_discharging</label>
+      <labelposition x="-96.0" y="-30.0" width="200.0" height="50.0" />
+      <middlepoint x="691.5" y="118.0" />
+    </transition>
+    <transition source="2" target="1">
+      <label>switch_charging</label>
+      <labelposition x="-57.0" y="7.0" width="122.0" height="52.0" />
+      <middlepoint x="695.5" y="267.0" />
+    </transition>
+    <transition source="3" target="2">
+      <label>switch_discharging</label>
+      <labelposition x="-90.0" y="63.0" width="126.0" height="50.0" />
+    </transition>
+    <transition source="4" target="1">
+      <label>switch_charging</label>
+      <labelposition x="48.0" y="-27.0" width="116.0" height="52.0" />
+    </transition>
+  </component>
+  <component id="controller">
+    <param name="g" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="min_charge" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="max_charge" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="min_discharge" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="max_discharge" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="switch_charging" type="label" local="false" />
+    <param name="switch_discharging" type="label" local="false" />
+    <param name="t_charge" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="t_discharge" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <location id="1" name="charging" x="346.0" y="267.0" width="250.0" height="184.0">
+      <invariant>t_charge &lt;= max_charge</invariant>
+      <flow>g' == 1 &amp;
+min_charge' == 0 &amp;
+max_charge' == 0 &amp;
+min_discharge' == 0 &amp;
+max_discharge' == 0 &amp;
+t_charge' == 1 &amp;
+t_discharge' == 0</flow>
+    </location>
+    <location id="2" name="discharging" x="836.0" y="263.0" width="270.0" height="168.0">
+      <invariant>t_discharge &lt;= max_discharge</invariant>
+      <flow>g' == 1 &amp;
+min_charge' == 0 &amp;
+max_charge' == 0 &amp;
+min_discharge' == 0 &amp;
+max_discharge' == 0 &amp;
+t_charge' == 0 &amp;
+t_discharge' == 1</flow>
+    </location>
+    <transition source="1" target="2">
+      <label>switch_discharging</label>
+      <guard>t_charge &gt;= min_charge</guard>
+      <assignment>t_discharge' == 0</assignment>
+      <labelposition x="-85.0" y="-80.0" width="182.0" height="82.0" />
+      <middlepoint x="566.5" y="193.5" />
+    </transition>
+    <transition source="2" target="1">
+      <label>switch_charging</label>
+      <guard>t_discharge &gt;= min_discharge</guard>
+      <assignment>t_charge' == 0</assignment>
+      <labelposition x="-78.0" y="25.0" width="208.0" height="82.0" />
+      <middlepoint x="565.0" y="356.5" />
+    </transition>
+  </component>
+  <component id="network">
+    <param name="switch_charging" type="label" local="false" />
+    <param name="switch_discharging" type="label" local="false" />
+    <param name="a" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="b" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="adapt_charging" type="label" local="false" />
+    <param name="adapt_discharging" type="label" local="false" />
+    <param name="discharging_rate" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="charging_rate" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="g" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="min_charge" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="max_charge" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="min_discharge" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="max_discharge" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="t_charge" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="t_discharge" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <bind component="KineticBatteryModel" as="KineticBatteryModel_1" x="698.0" y="335.0">
+      <map key="a">a</map>
+      <map key="b">b</map>
+      <map key="adapt_charging">adapt_charging</map>
+      <map key="adapt_discharging">adapt_discharging</map>
+      <map key="switch_discharging">switch_discharging</map>
+      <map key="switch_charging">switch_charging</map>
+      <map key="discharging_rate">discharging_rate</map>
+      <map key="charging_rate">charging_rate</map>
+    </bind>
+    <bind component="controller" as="controller_1" x="467.0" y="542.0">
+      <map key="g">g</map>
+      <map key="min_charge">min_charge</map>
+      <map key="max_charge">max_charge</map>
+      <map key="min_discharge">min_discharge</map>
+      <map key="max_discharge">max_discharge</map>
+      <map key="switch_charging">switch_charging</map>
+      <map key="switch_discharging">switch_discharging</map>
+      <map key="t_charge">t_charge</map>
+      <map key="t_discharge">t_discharge</map>
+    </bind>
+  </component>
+</sspaceex>
+

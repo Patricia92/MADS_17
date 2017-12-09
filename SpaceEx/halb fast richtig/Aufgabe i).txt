@@ -1,0 +1,1 @@
+Nein, da a == 0 niemals Reachable laut programm.

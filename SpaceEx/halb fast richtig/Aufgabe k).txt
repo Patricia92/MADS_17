@@ -1,0 +1,2 @@
+A verändert sich nicht, da der Recovery Effect mit konstantem p und c (bei uns p=0.01 und c=0.5), sowie gleichem Ladungswert
+a und b = 2000 nichts verändert.
