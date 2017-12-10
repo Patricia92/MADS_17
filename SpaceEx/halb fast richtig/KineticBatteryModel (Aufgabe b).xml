@@ -31,7 +31,7 @@ discharging_rate' == 0 &amp;
 b' == 0.01 * ( (a/0.5) - (b / (1-0.5) ))</flow>
     </location>
     <location id="4" name="adapted_discharging" x="940.0" y="538.0" width="290.0" height="120.0">
-      <flow>a' == discharging_rate 
+      <flow>a' == (-1)*a
 &amp;charging_rate' == 0
 &amp; discharging_rate' == 0 &amp;
 b' == 0.01 * ( (a/0.5) - (b / (1-0.5) ))</flow>

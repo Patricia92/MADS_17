@@ -1,1 +1,1 @@
-Nein, aber Reachable nach ca. 51.
+Wie in j1) und j2) zu erkennen ist kann a <= 2500 nicht innerhalb von 48 Sekunden erreicht werden.

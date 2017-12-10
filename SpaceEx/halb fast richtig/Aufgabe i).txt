@@ -1,1 +1,1 @@
-Nein, da a == 0 niemals Reachable laut programm.
+Bei frühestens Sekunde 122 kann a Null erreichen, zu diesem Zeitpunkt ist b bei knapp unter 2000.

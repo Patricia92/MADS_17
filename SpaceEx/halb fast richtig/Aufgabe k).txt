@@ -1,2 +1,4 @@
-A verändert sich nicht, da der Recovery Effect mit konstantem p und c (bei uns p=0.01 und c=0.5), sowie gleichem Ladungswert
-a und b = 2000 nichts verändert.
+Es ist zu erkennen, dass a mit einer leicht abfallenden Rate an Ladung dazugewinnt. 
+Dies ist mit dem Recovery Effect zu erklären. Da bei b und a eine anfängliche Differenz von 3000 
+besteht gibt b zu beginn mehr Ladung ab. Im Anschluss pendelt sich die Ladung von a und b, mit abnehmender
+Geschwindigkeit, in der Mitte von 2000 und 5000 ein.
