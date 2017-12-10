@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.13)  10 DEC 2017 20:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.13)  10 DEC 2017 20:52
 entering extended mode
 **./Abgabe.tex
 (Abgabe.tex
@@ -1399,92 +1399,92 @@ Package babel Info: Redefining ngerman shorthand "|
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language append on input line 47.
  [2 <./Aufgabe_d).png>]
-Underfull \hbox (badness 10000) in paragraph at lines 48--49
+Underfull \hbox (badness 10000) in paragraph at lines 50--51
 
  []
 
 <Aufgabe_f).png, id=31, 481.8pt x 481.8pt>
 File: Aufgabe_f).png Graphic file (type png)
  <use Aufgabe_f).png>
-Package pdftex.def Info: Aufgabe_f).png used on input line 52.
+Package pdftex.def Info: Aufgabe_f).png used on input line 54.
 (pdftex.def)             Requested size: 364.19667pt x 364.2089pt.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 54.
+(babel)             in language append on input line 56.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 54.
+(babel)             in language append on input line 56.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 54.
+(babel)             in language append on input line 56.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 54.
+(babel)             in language append on input line 56.
  [3 <./Aufgabe_e).png>] <Aufgabe_g1).png, id=38, 481.8pt x 481.8pt>
 File: Aufgabe_g1).png Graphic file (type png)
  <use Aufgabe_g1).png>
-Package pdftex.def Info: Aufgabe_g1).png used on input line 59.
+Package pdftex.def Info: Aufgabe_g1).png used on input line 68.
 (pdftex.def)             Requested size: 182.09833pt x 182.09341pt.
 
 <Aufgabe_g2).png, id=39, 481.8pt x 481.8pt>
 File: Aufgabe_g2).png Graphic file (type png)
  <use Aufgabe_g2).png>
-Package pdftex.def Info: Aufgabe_g2).png used on input line 66.
+Package pdftex.def Info: Aufgabe_g2).png used on input line 75.
 (pdftex.def)             Requested size: 182.09833pt x 182.09341pt.
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 55--69
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 64--78
 []  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--71
+Underfull \hbox (badness 10000) in paragraph at lines 79--80
 
  []
 
 <Aufgabe_h1).png, id=40, 481.8pt x 481.8pt>
 File: Aufgabe_h1).png Graphic file (type png)
  <use Aufgabe_h1).png>
-Package pdftex.def Info: Aufgabe_h1).png used on input line 75.
+Package pdftex.def Info: Aufgabe_h1).png used on input line 84.
 (pdftex.def)             Requested size: 182.09833pt x 182.09341pt.
 
 <Aufgabe_h2).png, id=41, 481.8pt x 481.8pt>
 File: Aufgabe_h2).png Graphic file (type png)
  <use Aufgabe_h2).png>
-Package pdftex.def Info: Aufgabe_h2).png used on input line 82.
+Package pdftex.def Info: Aufgabe_h2).png used on input line 91.
 (pdftex.def)             Requested size: 182.09833pt x 182.09341pt.
 
-Overfull \hbox (2.22221pt too wide) in paragraph at lines 72--85
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 81--94
 [][]  [] 
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 86.
+(babel)             in language append on input line 95.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 86.
+(babel)             in language append on input line 95.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language append on input line 86.
+(babel)             in language append on input line 95.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language append on input line 86.
+(babel)             in language append on input line 95.
 [4 <./Aufgabe_f).png> <./Aufgabe_g1).png> <./Aufgabe_g2).png>]
-Underfull \hbox (badness 10000) in paragraph at lines 86--87
+Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
 <Aufgabe_j).png, id=51, 481.8pt x 481.8pt>
 File: Aufgabe_j).png Graphic file (type png)
  <use Aufgabe_j).png>
-Package pdftex.def Info: Aufgabe_j).png used on input line 91.
+Package pdftex.def Info: Aufgabe_j).png used on input line 100.
 (pdftex.def)             Requested size: 364.19667pt x 364.2089pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--92
+Underfull \hbox (badness 10000) in paragraph at lines 97--101
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 94--95
+Underfull \hbox (badness 10000) in paragraph at lines 103--104
 
  []
 
 <Aufgabe_k).png, id=52, 481.8pt x 481.8pt>
 File: Aufgabe_k).png Graphic file (type png)
  <use Aufgabe_k).png>
-Package pdftex.def Info: Aufgabe_k).png used on input line 98.
+Package pdftex.def Info: Aufgabe_k).png used on input line 107.
 (pdftex.def)             Requested size: 364.19667pt x 364.2089pt.
 )
 Package babel Info: Redefining ngerman shorthand "|
@@ -1522,14 +1522,14 @@ Here is how much of TeX's memory you used:
  27611 multiletter control sequences out of 15000+200000
  8181 words of font info for 32 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,11n,67p,408b,348s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 55i,11n,67p,531b,348s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Abgabe.pdf (6 pages, 162540 bytes).
+Output written on Abgabe.pdf (6 pages, 164313 bytes).
 PDF statistics:
  93 PDF objects out of 1000 (max. 8388607)
  19 named destinations out of 1000 (max. 500000)
