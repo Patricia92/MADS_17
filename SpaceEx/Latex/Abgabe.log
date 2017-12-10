@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.13)  10 DEC 2017 20:52
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (MiKTeX 2.9.6210 64-bit) (preloaded format=pdflatex 2017.3.13)  10 DEC 2017 21:46
 entering extended mode
 **./Abgabe.tex
 (Abgabe.tex
@@ -1466,25 +1466,47 @@ Underfull \hbox (badness 10000) in paragraph at lines 95--96
 
  []
 
-<Aufgabe_j).png, id=51, 481.8pt x 481.8pt>
-File: Aufgabe_j).png Graphic file (type png)
- <use Aufgabe_j).png>
-Package pdftex.def Info: Aufgabe_j).png used on input line 100.
-(pdftex.def)             Requested size: 364.19667pt x 364.2089pt.
+<Aufgabe_i1).png, id=51, 481.8pt x 481.8pt>
+File: Aufgabe_i1).png Graphic file (type png)
+ <use Aufgabe_i1).png>
+Package pdftex.def Info: Aufgabe_i1).png used on input line 100.
+(pdftex.def)             Requested size: 182.09833pt x 182.09341pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 97--101
+<Aufgabe_i2).png, id=52, 481.8pt x 481.8pt>
+File: Aufgabe_i2).png Graphic file (type png)
+ <use Aufgabe_i2).png>
+Package pdftex.def Info: Aufgabe_i2).png used on input line 107.
+(pdftex.def)             Requested size: 182.09833pt x 182.09341pt.
 
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 97--110
+[][]  [] 
+ []
+
+<Aufgabe_j1).png, id=53, 481.8pt x 481.8pt>
+File: Aufgabe_j1).png Graphic file (type png)
+ <use Aufgabe_j1).png>
+Package pdftex.def Info: Aufgabe_j1).png used on input line 115.
+(pdftex.def)             Requested size: 182.09833pt x 182.09341pt.
+
+<Aufgabe_j2).png, id=54, 481.8pt x 481.8pt>
+File: Aufgabe_j2).png Graphic file (type png)
+ <use Aufgabe_j2).png>
+Package pdftex.def Info: Aufgabe_j2).png used on input line 122.
+(pdftex.def)             Requested size: 182.09833pt x 182.09341pt.
+
+Overfull \hbox (2.22221pt too wide) in paragraph at lines 111--125
+[]  [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 103--104
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
 
  []
 
-<Aufgabe_k).png, id=52, 481.8pt x 481.8pt>
+<Aufgabe_k).png, id=55, 481.8pt x 481.8pt>
 File: Aufgabe_k).png Graphic file (type png)
  <use Aufgabe_k).png>
-Package pdftex.def Info: Aufgabe_k).png used on input line 107.
+Package pdftex.def Info: Aufgabe_k).png used on input line 130.
 (pdftex.def)             Requested size: 364.19667pt x 364.2089pt.
 )
 Package babel Info: Redefining ngerman shorthand "|
@@ -1495,7 +1517,8 @@ Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language append on input line 67.
 Package babel Info: Redefining ngerman shorthand "~
 (babel)             in language append on input line 67.
- [5 <./Aufgabe_h1).png> <./Aufgabe_h2).png> <./Aufgabe_j).png>]
+ [5 <./Aufgabe_h1).png> <./Aufgabe_h2).png> <./Aufgabe_i1).png> <./Aufgabe_i2).
+png> <./Aufgabe_j1).png> <./Aufgabe_j2).png>]
 Package babel Info: Redefining ngerman shorthand "|
 (babel)             in language append on input line 69.
 Package babel Info: Redefining ngerman shorthand "~
@@ -1507,8 +1530,7 @@ Package babel Info: Redefining ngerman shorthand "~
  [6 <./Aufgabe_k).png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 69.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 69.
-
-(Abgabe.aux)
+ (Abgabe.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 69.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 69.
 Package rerunfilecheck Info: File `Abgabe.out' has not changed.
@@ -1516,10 +1538,10 @@ Package rerunfilecheck Info: File `Abgabe.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 69.
  ) 
 Here is how much of TeX's memory you used:
- 24627 strings out of 493333
- 462130 string characters out of 3139194
+ 24642 strings out of 493333
+ 462417 string characters out of 3139194
  587729 words of memory out of 3000000
- 27611 multiletter control sequences out of 15000+200000
+ 27623 multiletter control sequences out of 15000+200000
  8181 words of font info for 32 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,11n,67p,531b,348s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1529,9 +1551,9 @@ les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Program Files/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX 2.9
 /fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/public/amsfonts/cm/cmsy10.pfb>
-Output written on Abgabe.pdf (6 pages, 164313 bytes).
+Output written on Abgabe.pdf (6 pages, 195130 bytes).
 PDF statistics:
- 93 PDF objects out of 1000 (max. 8388607)
+ 99 PDF objects out of 1000 (max. 8388607)
  19 named destinations out of 1000 (max. 500000)
- 58 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 73 words of extra memory for PDF output out of 10000 (max. 10000000)
 
