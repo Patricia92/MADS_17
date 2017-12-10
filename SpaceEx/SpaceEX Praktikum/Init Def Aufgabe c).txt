@@ -1,0 +1,13 @@
+Initial states:
+
+a==2000 & b==5000 & 
+discharging_rate==0 & charging_rate==0 & 
+g==0 & min_charge==10 & 
+max_charge==10 & min_discharge==10 & max_discharge==10 & 
+t_charge==0 & t_discharge==0 & 
+loc(KineticBatteryModel_1)==normal_charging & loc(controller_1)==charging
+
+
+Forbidden states:
+
+network.a <= 6000 & network.g <= 48
