@@ -1,0 +1,37 @@
+Bounds on the variables over the entire set:
+network.g: [-0,181.8]
+network.a: [26.3988,5920.44]
+
+Location-wise bounds on the variables:
+
+Location: loc(KineticBatteryModel_1)==normal_charging & loc(controller_1)==charging
+network.g: [-0,173.725]
+network.a: [26.3988,5920.44]
+
+Location: loc(KineticBatteryModel_1)==normal_discharging & loc(controller_1)==discharging
+network.g: [9.9,181.8]
+network.a: [200,5920.44]
+
+Location: loc(KineticBatteryModel_1)==adapted_discharging & loc(controller_1)==discharging
+network.g: [121.5,163.625]
+network.a: [26.3988,200]
+
+----------------------------------------------
+
+Bounds on the variables over the entire set:
+network.g: [-0,181.8]
+network.b: [1463.01,5374.4]
+
+Location-wise bounds on the variables:
+
+Location: loc(KineticBatteryModel_1)==normal_charging & loc(controller_1)==charging
+network.g: [-0,173.725]
+network.b: [1606.1,5361.4]
+
+Location: loc(KineticBatteryModel_1)==normal_discharging & loc(controller_1)==discharging
+network.g: [9.9,181.8]
+network.b: [1463.01,5374.4]
+
+Location: loc(KineticBatteryModel_1)==adapted_discharging & loc(controller_1)==discharging
+network.g: [121.5,163.625]
+network.b: [1813.53,5302.46]

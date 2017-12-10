@@ -1,0 +1,14 @@
+
+Bounds on the variables over the entire set:
+network.g: [-0,203.8]
+network.a: [2000,3662.04]
+
+Location-wise bounds on the variables:
+
+Location: loc(KineticBatteryModel_1)==normal_charging & loc(controller_1)==charging
+network.g: [-0,193.5]
+network.a: [2000,3661.39]
+
+Location: loc(KineticBatteryModel_1)==normal_discharging & loc(controller_1)==discharging
+network.g: [9.9,203.8]
+network.a: [2490.49,3662.04]
