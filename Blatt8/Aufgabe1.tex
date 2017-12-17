@@ -1,3 +1,23 @@
 \aufgabe 1
 
-...
+\subsection*{Aufgabenteil a:}
+
+Sei $B^1=I_0^1\times ... \times I_n^1$ und $B^2=I_0^2\times ... \times I_n^2$.
+
+\begin{align*}
+B^1\cup B^2 = [min(l_0^1,l_0^2), max(u_0^1,u_0^2)] \times ... \times [min(l_n^1,l_n^2), max(u_n^1,u_n^2)]
+\end{align*}
+
+\subsection*{Aufgabenteil b:}
+
+\begin{align*}
+
+B^1\cap B^2 = \begin{cases} \emptyset &\text{if} \exists i: l_i^1 > u_i^2 \wedge l_i^2 > u_i^1\\ 
+[max(l_0^1,l_0^2), min(u_0^1,u_0^2)] \times ... \times [max(l_n^1,l_n^2), min(u_n^1,u_n^2)]& \text{else}
+\end{cases}
+\end{align*}
+
+\subsection*{Aufgabenteil c:}
+\begin{align*}
+x\in B \Leftrightarrow \forall i: l_i\leq x_i \leq u_i
+\end{align*}
