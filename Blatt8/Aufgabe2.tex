@@ -1,0 +1,22 @@
+\aufgabe 2
+
+Sei E die Menge der gegeben Eckpunkte und q der Punkt, von dem bestimmt werden soll ob er im gegeben Polyeder liegt. \\
+\begin{enumerate}
+\item Iteriere über E und lösche alle Eckpunkte, die in mindestens einer Dimension echt kleiner als q sind (ist nach diesem Schritt kein Punkt übrig, liegt q nicht im Polyeder und wir brechen ab)
+\item Iteriere über alle Dimensionen:
+\begin{enumerate}
+	\item Wähle den minimalen Wert aller Punkte in E bezüglich dieser Dimension
+	\item Lösche alle Punkte die bezüglich dieser Dimension nicht minimal sind.
+\end{enumerate}
+Nun ist noch genau ein Punkt in E, diesen nennen wir P. Ist P=q liegt q im Polyeder und wir brechen ab.
+\item Ist der Punkt, der in jeder Dimension 1 kleiner ist als P weiß, liegt q nicht im Polyeder, ist dieser Punkt schwarz, liegt q im Polyeder.
+\end{enumerate}
+\begin{enumerate}
+\item $\bigo(n * d)$
+\item $\bigo(d * n)$
+\item $\bigo(d)$
+\end{enumerate}
+Die Gesamtlaufzeit liegt also bei $\bigo(n*d)$.
+
+
+ist der Punkt der in jeder Dimension genau eins unter P ist weiß, liegt q nicht im Polyeder, ist er schwarz liegt q im Polyeder
