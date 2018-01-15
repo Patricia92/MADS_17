@@ -1,0 +1,51 @@
+\aufgabe 2
+
+\subsection*{Aufgabenteil a:}
+
+$f(x) = \frac{1}{(1-x)^2}$\\
+$f'(x) = \frac{2}{(1-x)^3}$\\
+$f''(x) = \frac{6}{(1-x)^4}$\\
+$f'''(x) = \frac{24}{(1-x)^5}$
+
+\begin{align*}
+P_0(x) =& \frac{1}{9} \\\\
+P_1(x) =& \frac{1}{9} + \frac{2}{27}(x+2) \\
+=& \frac{2}{27} x + \frac{3}{27} + \frac{4}{27}\\
+=& \frac{2}{27} x + \frac{7}{27} \\\\
+P_2(x) =& \frac{2}{27} x + \frac{7}{27} + \frac{1}{27} (x+2)^2 \\
+=& \frac{2}{27} x + \frac{7}{27} + \frac{1}{27} x^2 \frac{4}{27} x + \frac{4}{27}\\
+=& \frac{1}{27} x^2 + \frac{6}{27} x + \frac{11}{27} \\\\
+P_3 =& \frac{1}{27} x^2 + \frac{6}{27} x + \frac{11}{27} + \frac{4}{243}(x+2)^3 \\
+=& \frac{4}{243} x^3 + \frac{3}{81} x^2 + \frac{8}{81} x^2 + \frac{18}{81} x + \frac{16}{81} x + \frac{99}{243} + \frac{32}{243}\\
+=& \frac{4}{243} x^3 + \frac{11}{81} x^2 + \frac{34}{81} x + \frac{131}{243}
+\end{align*}
+
+\subsubsection*{Intervalle:}
+$g_0(x) = f(x) - P_0(x) = \frac{1}{(1-x)^2} - \frac{1}{9}$
+$g_0(-4)=\frac{1}{25} - \frac{1}{9} = \frac{9}{225} - \frac{25}{225} = \frac{-16}{225}$\\
+$g_0(0)=1 - \frac{1}{9} = \frac{8}{9}$\\
+$I_0= P_0 + [-\frac{8}{9}, \frac{8}{9}]$\\\\
+
+$g_1(x)=f(x) - P_1(x)= \frac{1}{(1-x)^2} - \frac{2}{27} x - \frac{7}{27}$\\
+$g_1(-4) = \frac{1}{25} + \frac{8}{27} - \frac{7}{27} = \frac{1}{25} + \frac{1}{27}$ \\
+$g_1(0) = 1 - \frac{7}{27} = \frac{20}{27}$\\
+$I_1=P_1+[-\frac{20}{27},\frac{20}{27}]$\\\\
+
+$g_2(x) =f(x) - P_2(x)= \frac{1}{(1-x)^2}-\frac{1}{27} x^2 - \frac{6}{27} x - \frac{11}{27}$\\
+$g_2(-4)=\frac{1}{25}-\frac{16}{27}+\frac{24}{27}-\frac{11}{27}=\frac{1}{25}-\frac{3}{27}$\\
+$g_2(0)=1-\frac{11}{27}=\frac{16}{27}$\\
+$I_2=P_2+[-\frac{16}{27},\frac{16}{27}]$\\\\
+
+$g_3(x) =f(x) - P_3(x)= \frac{1}{(1-x)^2}-\frac{4}{243} x^3 - \frac{11}{81} x^2 - \frac{34}{81} x - \frac{131}{243}$\\
+$g_3(-4) = \frac{1}{25}+\frac{256}{243} - \frac{176}{81} + \frac{136}{81} - \frac{131}{243} =  \frac{1}{25} + \frac{125}{243} - \frac{40}{81} =  \frac{1}{25} + \frac{5}{243}$\\
+$g_3(0)=1-\frac{131}{243} = \frac{112}{243}$\\
+$I_3=P_3+[-\frac{112}{243},\frac{112}{243}]$
+\subsection*{Aufgabenteil b:}
+\begin{align*}
+g_0=&x_0\\
+g_1=&x_0+t+x_0t\\
+g_2=&x_0+t+x_0t+t^2+x_0t^2\\
+g_3=&x_0+t+x_0t+t^2+x_0t^2+t^3+x_0t^3\\
+g_4=&g_3
+\end{align*}
+Fixpunkt erreicht.
